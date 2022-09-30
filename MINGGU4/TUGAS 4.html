@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form Mahasiwa</h3>
+    <form id="form1" name="form1" method="post" action="kirim.php">
+
+        <table> 
+            <tr>
+                <td>NIM</td>  
+                <td> <input type="number" name="fnin"></td>
+            </tr>
+            <td>Nama</td>  
+            <td> <input type="text" name="fnama"></td>
+        </tr>
+        <tr>
+            <td>program studi</td>
+            <td>
+                <select name="fprodi">
+                    <option value="">pilih program study anda</option>
+                    <option value="A11">S1 - TI</option>
+                    <option value="A12">S1 - SI</option>
+                    <option value="A22">D3 - TI</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tanggal lahir</td>
+            <td><input type="date" name="ftgl_lhr"></td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td>
+                <input type="checkbox" name="Hobby1" value="101">
+                <label for="Hobby1">web Dev</label>
+                <input type="checkbox" name="Hobby2" value="102">
+                <label for="Hobby2">game Dev</label>
+                <input type="checkbox" name="Hobby3" value="103">
+                <label for="Hobby3">app Dev</label>
+            </select>
+        </td>
+        
+    </tr>
+    <tr>
+        <td colspan="2" align="center" > <input type="submit" name="fkirim" value="kirim" value="kirim" ></td>
+    </tr>
+</table>    
+</form>
+</body>
+</html>
