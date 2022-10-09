@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LATIHAN MINGGU 5</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <h2 align="center">VIDEO LOCAL HTML 5</h2>
+    <video align="center" id="12.mp4" width="300px" height="250px" controls>
+        <source src="12.mp4" type="video/mp4">
+    </video>
+    <script>
+        var vid = document.getElementById("12.mp4");
+            function playVid(){
+                vid.play();
+            }
+            function pauseVid(){
+                vid.pause();
+            }
+            function myFunction(){ 
+                alert(vid.duration);
+            }
+    </script>
+<header>
+  <h2>LATIHAN MINGGU 5</h2>
+</header>
+
+<section>
+  <nav>
+        <button onclick="playVid()" type="button">Play </button>
+        <button oncilck="pauseVid()" type="button">Pause Video</button>
+        <button onclick="myFunction()" type="button">Get video length</button>
+  </nav>
+  
+  <article>
+    <h1>YOUTUBE</h1>
+    <iframe width="300px" height="200px" src="https://www.youtube.com/embed/VdpYjCnwDPM">
+    </iframe>
+  </article>
+</section>
+
+<footer>
+  <p>TERIMA KASIH</p>
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+</footer>
+
+</body>
+</html>
